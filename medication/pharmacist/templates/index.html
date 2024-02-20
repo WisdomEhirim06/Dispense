@@ -1,8 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta>
-        <link rel="stylesheet">
-        <title>Dispense</title>
-    </head>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+    Dizpensor
+{% endblock %}
+
+{% block main %}
+    <div class="search-container">
+        <div class="home-image">
+            <img>
+        </div>
+        <div class="search-input">
+            <input placeholder="Search for drugs" type="text" autofocus>
+            <br>
+            <div class="search-filter">
+                <input type="checkbox" name="Generic name">
+                <input type="checkbox" name="Brand name">
+            </div>
+            <button id="search-button" type="submit">Search Drugs</button>
+        </div>
+    </div>
+{% endblock %}

@@ -56,4 +56,6 @@ def Signin(request):
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
+def Search(request):
+    pass
 
