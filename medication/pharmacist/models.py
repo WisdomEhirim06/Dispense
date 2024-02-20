@@ -5,11 +5,11 @@ from django.contrib.auth.models import User
 class Drug(models.Model):
     name = models.CharField(max_length=100, unique=True)
     brand_name = models.CharField(max_length=100, blank=True, null=True)
-    composition = models.TextField
-    indications = models.TextField
-    interactions = models.TextField
-    dosage = models.TextField
-    side_effects = models.TextField
+    composition = models.TextField()
+    indications = models.TextField()
+    interactions = models.TextField()
+    dosage = models.TextField()
+    side_effects = models.TextField()
 
     def __str__(self):
         return self.name
