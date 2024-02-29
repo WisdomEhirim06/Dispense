@@ -1,7 +1,9 @@
 .form-container {
 
 }
-.form-container input {
-    border-radius: 0px;
+.form-container input[text], input[password] {
+    border-radius: 10px;
+    height: 10px;
+
 
 }

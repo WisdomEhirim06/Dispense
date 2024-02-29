@@ -6,8 +6,9 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 # Create your views here.
 
-def index(request):
+def search(request):
     return render(request, "index.html")
+
 
 def register(request):
     # if method is Post, then form input is taken
@@ -56,6 +57,4 @@ def Signin(request):
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
-def Search(request):
-    pass
 

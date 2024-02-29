@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+<div class="results">
+    <header><h1>{{ Drug.name }}</h1></header>
+    <div class="drug-contents">
+        <p>Compostion: {{ Drug.composition }}</p><br>
+        <P>Interactions: {{ Drug.interactions }}</P><br>
+        <p>Indications: {{ Drug.indications }}</p><br>
+        <p>Dosage: {{ Drug.dosage }}</p><br>
+        <p>Side effects: {{ Drug.side_effects }}</p> <br>   
+    </div>
+    
+    <footer><p>This information may not be 100% accurate. Please do well to visit a doctor, self medication can be dangerous to one's health.</p></footer>
+</div>
+{% endblock%}
